@@ -24,20 +24,29 @@
 
 ## Walking through what I did
 
-[Describe, step by step, a real branch → commit → push → PR you did. Include the actual commands you used.]
+[1. Opened the repository template on GitHub.
+2. Clicked "Use this template".
+3. Created a new repository named devnet-rebana-althea.
+4. Set the repository visibility to Public.
+5.checked all required files and folders were present.
+6. Opened and read the README.md file.
+7. Opened module-1-git-github/notes.md.
+8. Filled out the answers in notes.md.
+9. Committed my changes to the repository.]
 
 ```
-# paste your actual commands here
+# Commands:
+No terminal commands were used. I was unable to access GitHub Codespaces because my free monthly usage limit had been reached, so I edited and committed files directly through the GitHub website.
 ```
 
 ---
 
 ## A mistake I made (or one I want to avoid)
 
-[What tripped you up? A confusing error message, committing to the wrong branch, a merge conflict — explain it so a classmate reading this avoids the same mistake.]
+[A mistake I made in a previous project was getting a merge conflict because I forgot to pull the latest changes before pushing my own work. I also had difficulty switching branches when I had uncommitted changes. After researching, I learned how to use Git stash to temporarily save my work and switch branches safely. This experience taught me the importance of pulling updates regularly and understanding branch management] 
 
 ---
 
 ## How this connects to something else
 
-[Optional: how does version control relate to anything else you've learned or used before?]
+[Version control helped me during group projects because I could easily see the changes made by my classmates. Through the commit history, I was able to identify which parts of the code were added, removed, or modified. This prevented me from getting lost or confused when working on the project and made collaboration much easier.]
