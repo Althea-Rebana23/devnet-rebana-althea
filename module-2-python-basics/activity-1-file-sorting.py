@@ -1,7 +1,7 @@
 """
 Module 2 — Activity: File Sorting with os and shutil
-Student: [your name]
-Date: [date]
+Student: Rebana Maria Althea D.
+Date: 9/26/2026
 
 ============================================
 WHAT DID YOU BUILD? (explain in your own words)
