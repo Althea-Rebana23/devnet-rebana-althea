@@ -1,5 +1,5 @@
-import requests
 import random
+import requests
 
 pokemon_list = [
     "venusaur", 
@@ -9,18 +9,24 @@ pokemon_list = [
     "rattata"
 ]
 pokemon = random.choice(pokemon_list)
-url = 'https://pokeapi.co/api/v2/pokemon' + pokemon
+url = 'https://pokeapi.co/api/v2/pokemon/' + pokemon
 response = requests.get(url)
-data = response.json()
-print("Who's That Pokemon?")
-print("Height:", data["height"])
-print("Weight:", data["weight"])
-for i in range(3):
-    guess = input("Guess:")
-    if guess.lower() == data ["name"]:
-        print ("You win")
-        break
-    else:
-        print("you lose")
-      
 
+if response.status_code == 200:
+    data = response.json()
+    print("Who's That Pokemon?")
+    print("Height:", data["height"])
+    print("Weight:", data["weight"])
+    print()
+
+    for i in range(3):
+        guess = input(f"Attempt {i+1} - Guess: ").lower()
+        if guess == data["name"]:
+            print("You win! The Pokémon is", data["name"])
+            break
+        else:
+            print("Incorrect!")
+            if i == 2:
+                print("\nYou lose! The correct Pokémon was:", data["name"])
+else:
+    print("Error: Could not retrieve data from the API.")
